@@ -9,12 +9,12 @@ include $(BOLOS_SDK)/Makefile.defines
 
 
 # All but bitcoin app use dependency onto the bitcoin app/lib
-APP_LOAD_FLAGS=--appFlags 0x250
+APP_LOAD_FLAGS=--appFlags 0x200
 APP_LOAD_PARAMS=--curve secp256k1 $(COMMON_LOAD_PARAMS)
 
 APPVERSION_M=1
 APPVERSION_N=0
-APPVERSION_P=8
+APPVERSION_P=9
 APPVERSION=$(APPVERSION_M).$(APPVERSION_N).$(APPVERSION_P)
 
 APP_LOAD_PARAMS += $(APP_LOAD_FLAGS)
